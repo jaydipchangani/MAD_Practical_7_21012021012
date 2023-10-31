@@ -13,8 +13,8 @@ class YoutubeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_youtube)
 
         val youtubeId = "fJn9B64Znrk"
-        val youtubeWebView: WebView = findViewById(R.id.youtube_vdo)
-        val webSettings: WebSettings = youtubeWebView.settings
+        val youtubeWebView : WebView = findViewById(R.id.YtVideo)
+        val webSettings : WebSettings = youtubeWebView.settings
         webSettings.javaScriptEnabled = true
         webSettings.loadWithOverviewMode = true
         webSettings.useWideViewPort = true
@@ -22,7 +22,7 @@ class YoutubeActivity : AppCompatActivity() {
 
         val button = findViewById<FloatingActionButton>(R.id.floatingActionButton2)
         button.setOnClickListener {
-            Intent(this, MainActivity::class.java).apply { startActivity(this) }
+            Intent(this,MainActivity::class.java).apply { startActivity(this) }
         }
     }
 }
